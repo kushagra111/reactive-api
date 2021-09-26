@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+console.log("cool")
+    var socket=new WebSocket
+        ('ws://localhost:8080/ws/profiles');
+        console.log(socket)
+    socket.addEventListener('message',function(event){
+    window.alert('message from server'+event.data)})
+</script>
+<h1>cool</h1>
+</body>
+</html>
