@@ -4,7 +4,7 @@
 <script>
 console.log("cool")
     var socket=new WebSocket
-        ('ws://localhost:8080/ws/profiles');
+        ('ws://localhost:8090/ws/profiles');
         console.log(socket)
     socket.addEventListener('message',function(event){
     window.alert('message from server'+event.data)})

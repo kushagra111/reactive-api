@@ -1,4 +1,4 @@
 #!/bin/bash
-port=${1:-8080}
+port=${1:-8090}
 
-curl "http://localhost:8080/profiles"
+curl -H"content-type: application/json" -d'{"email":"random"}' http://localhost:${port}/profiles
